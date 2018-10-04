@@ -1,7 +1,7 @@
 name = input("Please enter your name: ")
 age = int(input("Please enter your age: "))
-height = input("Please enter your height in inches: ")
-weight = input("Please enter your weight in pounds: ")
+height = int(input("Please enter your height in inches: "))
+weight = int(input("Please enter your weight in pounds: "))
 eyes = input("Please enter your eye colour: ")
 hair = input("Please enter your hair colour: ")
 is_heavy = weight > 3000
