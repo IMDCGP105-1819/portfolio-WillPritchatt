@@ -1,4 +1,6 @@
+# Allows user to input their details. Details are assigned to corresponding variables
 name = input("Please enter your name: ")
+# int(input()) requires the user to input an integer value or the program will not work
 age = int(input("Please enter your age: "))
 height = int(input("Please enter your height in inches: "))
 weight = int(input("Please enter your weight in pounds: "))
