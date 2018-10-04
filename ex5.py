@@ -7,3 +7,4 @@ while cards != 0:
         print("Take one down, trade it around {} duel monsters cards on the wall!".format(cards))
     else:
         print("So take it down, trade it around, no more duel monsters cards on the wall!")
+
