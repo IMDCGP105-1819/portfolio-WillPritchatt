@@ -15,5 +15,7 @@ while current_savings < portion_deposit:
     current_savings += current_savings * R / 12
     current_savings += monthly_salary * portion_saved
     count += 1
+    if count % 6 == 0:
+        monthly_salary += semi_annual_raise * monthly_salary
 
 print("It will take you {} months to save for the deposit".format(count))
