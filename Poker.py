@@ -1,5 +1,6 @@
 import random
 
+
 class Deck:
     def __init__(self):
         self.card_list = []
@@ -27,13 +28,31 @@ class Deck:
                         self.card_list.append(suit_value + ":K")
                     elif value == 14:
                         self.card_list.append(suit_value + ":A")
-        return self.card_list
+
+    def shuffle_cards(self):
+        random.shuffle(self.card_list)
 
     def get_card_deck(self):
         return self.card_list
 
 
+class Player:
+
+    def __init__(self, hand):
+        self.hand = hand
+
+
+def deal_hand():
+    hand = []
+    for i in range(5):
+        card = card_deck.pop(-1)
+        hand.append(card)
+    print(hand)
+
+
 card_deck = Deck()
 card_deck.create_deck()
+card_deck.shuffle_cards()
 print(card_deck.get_card_deck())
+deal_hand()
 
